@@ -1,5 +1,2 @@
-build:
-  docker:
-    worker: Dockerfile
-run:
-  worker: bash start
+web: python -m http.server $PORT 
+worker: python3 -m YukkiMusic
